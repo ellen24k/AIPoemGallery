@@ -113,5 +113,5 @@ def update_url():
     print('update_url completed')
 
 scheduler = BlockingScheduler()
-scheduler.add_job(update_url, 'interval', minutes=3)
+scheduler.add_job(update_url, 'interval', minutes=60)
 scheduler.start()
