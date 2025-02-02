@@ -1,0 +1,43 @@
+services:
+  app:
+    build: .
+    image: prj-ai-poem-gallery:latest
+    container_name: prj-ai-poem-gallery
+#    ports:
+#      - "8501:8501"
+    expose:
+      - 8501
+      # volumes:
+      # - C:/Users/ellen/PycharmProjects/AIPoemGallery/.streamlit/secrets.toml:/app/.streamlit/secrets.toml
+    environment:
+      TZ: "Asia/Seoul"
+      PG_HOST: ${POSTGRESQL_HOST}
+      PG_DBNAME: ${POSTGRESQL_AI_POEM_GALLERY_DBNAME}
+      PG_USER: ${POSTGRESQL_PROJECT_USER_ID}
+      PG_PASSWORD: ${POSTGRESQL_PROJECT_USER_PASSWORD}
+      PG_PORT: ${POSTGRESQL_PORT}
+      SUPABASE_KEY: ${SUPABASE_KEY}
+      SUPABASE_URL: ${SUPABASE_URL}
+      BUCKET_NAME: ${SUPABASE_STORAGE_AI_POEM_GALLERY_BUCKET_NAME}
+      AZURE_OPENAI_API_KEY_EASTUS: ${AZURE_OPENAI_API_KEY_EASTUS}
+      AZURE_OPENAI_API_VERSION_EASTUS_GPT4: ${AZURE_OPENAI_API_VERSION_EASTUS_GPT4}
+      AZURE_OPENAI_ENDPOINT_EASTUS_GPT4: ${AZURE_OPENAI_ENDPOINT_EASTUS_GPT4}
+      AZURE_OPENAI_API_VERSION_EASTUS_DALLE3: ${AZURE_OPENAI_API_VERSION_EASTUS_DALLE3}
+      AZURE_OPENAI_ENDPOINT_EASTUS_DALLE3: ${AZURE_OPENAI_ENDPOINT_EASTUS_DALLE3}
+      SPEECH_KEY_SO: ${AZURE_COGNITIVE_SPEECH_KEY_SO}
+      SERVICE_REGION_SO: ${AZURE_COGNITIVE_SPEECH_SERVICE_REGION_SO}
+      ENTER_PASSWORD: ${AI_POEM_GALLERY_ENTER_PASSWORD}
+      ADMIN_PASSWORD: ${AI_POEM_GALLERY_ADMIN_PASSWORD}
+      MINIO_ENDPOINT: ${MINIO_ENDPOINT}
+      MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
+      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
+    command: sh -c "streamlit run streamlit_app.py & python update_url.py"
+    restart: unless-stopped
+      # network_mode: "host"
+    networks:
+      net:
+        ipv4_address: 172.22.22.102
+
+networks:
+  net:
+    external: true

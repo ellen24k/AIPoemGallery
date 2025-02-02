@@ -1,0 +1,13 @@
+.idea
+.github
+.gitignore
+.dockerignore
+Dockerfile
+*.md
+*.sh
+*.yml
+*.bat
+scripts
+supabase
+supabase_client.py
+pkg_db/sqls
