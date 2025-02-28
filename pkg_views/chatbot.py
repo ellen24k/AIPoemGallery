@@ -49,7 +49,7 @@ def generate_poem():
 
     with pbar:
         autoplay_audio(
-            '../resources/msg_wait.wav'
+            'https://minio-data.ellen24k.kro.kr/ai-poem-gallery/resources/msg_wait.wav'
         )
         pbar.change_progress('인공지능이 단어를 가지고 삼행시를 생성 중입니다. 잠시만 기다려주세요.', 10)
         content = make_poem(user_input)
@@ -64,7 +64,7 @@ def generate_poem():
         pbar.change_progress('이미지를 생성 중입니다.', 10)
 
         autoplay_audio(
-            '../resources/snd_bg.wav'
+            'https://minio-data.ellen24k.kro.kr/ai-poem-gallery/resources/snd_bg.wav'
         )
 
         pbar.change_progress('오디오를 생성 중입니다.', 10)
@@ -77,7 +77,7 @@ def generate_poem():
         thread_img.join()
 
         if not dalle_img_url:
-            dalle_img_url = "../resources/default_img.png"
+            dalle_img_url = "https://minio-data.ellen24k.kro.kr/ai-poem-gallery/resources/default_img.png"
             pbar.change_progress('이미지 생성에 실패했습니다. 기본 이미지를 사용합니다.', 10)
         else:
             pbar.change_progress('이미지 생성이 완료되었습니다.', 10)
