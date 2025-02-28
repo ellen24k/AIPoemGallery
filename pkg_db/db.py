@@ -104,7 +104,7 @@ def delete_data(date):
 def file_delete(file_name: str):
     try:
         minio = get_minio_client()
-        response = minio.remove_object('ai-poem-gallery', file_name) #todo bucket name 환경변수로 뺄까?
+        response = minio.remove_object('ai-poem-gallery', file_name)
         return response
     # except APIError as e:
     #     return f'Error deleting file: {e.message}'
@@ -126,9 +126,6 @@ def file_delete(file_name: str):
 #     except Exception as e:
 #         return f'Unexpected error occurred: {str(e)}'
 
-#todo permanent url -> https://minio-data.ellen24k.kro.kr/public-bucket-name/object-path.png
-#기본적으로는 url 유효기간은 7일인 듯
-
 def file_upload(src_file_path, dest_file_name):
     try:
         minio = get_minio_client()
@@ -146,7 +143,8 @@ def file_upload(src_file_path, dest_file_name):
         return f'Unexpected error occurred: {str(e)}'
 
 def get_image_url(bucket_name: str, object_name: str) -> str:
-    url = minio_client.presigned_get_object(bucket_name, object_name)
+    # url = minio_client.presigned_get_object(bucket_name, object_name)
+    url = f'https://minio-data.ellen24k.kro.kr/{bucket_name}/{object_name}'
 
     return url
 
@@ -163,18 +161,3 @@ def insert_data(date, img_url, wav_url, title, content, moved=False):
     except Exception as e:
         print('insert_data error: ' + str(e))
         st.error(e)
-
-# if __name__ == '__main__':
-#     minio = get_minio_client()
-#     url1 = get_image_url('ai-poem-gallery', "20250130154127563733.png")
-#     url2 = get_image_url('ai-poem-gallery', "20250130154127563733.png")
-#     print(url1)
-#     print(url2)
-
-
-    # print(f'hi')
-    # file_delete('testimage.png')
-    # file_upload('temp/20250129002657164581.wav', '20250129002657164581.wav')
-
-    #todo 이미지 리사이즈해서 bucket에 올리기, minio 링크 연장 or 권한 부여 알아보기
-    #todo bucket public + 링크 수정

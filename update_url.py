@@ -90,7 +90,8 @@ def download_and_upload_image(dalle_url, file_name):
             length=len(image_data)
         )
 
-        return minio_cli.presigned_get_object('ai-poem-gallery', f'{file_name}.png')
+        # return minio_cli.presigned_get_object('ai-poem-gallery', f'{file_name}.png')
+        return f'https://minio-data.ellen24k.kro.kr/ai-poem-gallery/{file_name}.png'
     else:
         print(f"Failed to download dalle image, status code: {response.status_code}")
         return dalle_url
