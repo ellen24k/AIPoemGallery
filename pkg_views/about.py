@@ -20,7 +20,7 @@ with GitHub, Streamlit, Supabase(Storage, PostgreSQL, Edge Function), Azure AI S
 ## _**AI 삼행시 갤러리**_ v1.0~v2.0
 - - -
 AI를 활용한 삼행시 생성 및 삼행시 기반 이미지 생성기
-> v1.0 프로젝트 기간: `2024.11~2024.12`\
+> v1.0 프로젝트 기간: `2024.11~2024.12`
 > v2.0 프로젝트 기간: `2025.1~2025.2`
 
 ### 주요 기능
