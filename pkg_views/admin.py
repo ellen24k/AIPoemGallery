@@ -64,7 +64,7 @@ def load_view():
                     img_file_name = extract_filename(row['img_url'])
                     wav_file_name = extract_filename(row['wav_url'])
 
-                    file_delete(img_file_name)
+                    if row['moved'] == True: file_delete(img_file_name)
                     file_delete(wav_file_name)
                     st.rerun()
                 st.divider()

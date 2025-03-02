@@ -34,9 +34,10 @@ def padding_set():
 
 def extract_filename(url):
     start = url.rfind('/') + 1
-    end = url.find('?', start)
-    if start != 0 and end != -1:
-        return url[start:end]
+    # end = url.find('?', start)
+    # if start != 0 and end != -1:
+    if start != 0:
+        return url[start:]
     return None
 
 
