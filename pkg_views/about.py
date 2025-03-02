@@ -19,7 +19,7 @@ with GitHub, Streamlit, Supabase(Storage, PostgreSQL, Edge Function), Azure AI S
 
 (v2.0) Streamlit 사이트에서 작동하던 앱을 Oracle Cloud로 이전하였습니다. Supabase의 Storage, PostgreSQL, Edge Fucntion를 Minio Object Storage, Python Apscheduler로 변경하였습니다. 또한 Jenkins를 적용하여 이미지를 자동빌드 및 배포하게 CI/CD를 변경하였습니다.
 - - -
-### _**AI 삼행시 갤러리**_ v1.0~v2.0
+### AI 삼행시 갤러리 v1.0~v2.0
 
 AI를 활용한 삼행시 생성 및 삼행시 기반 이미지 생성기
 > v1.0 프로젝트 기간: `2024.11~2024.12`
