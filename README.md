@@ -28,3 +28,6 @@ AI를 활용한 삼행시 생성 및 삼행시 기반 이미지 생성기
 
 ### 데모 동영상 다운로드 (V1.0) (시낭송 음성을 듣기 위해 동영상으로 감상하세요)
 [데모 영상 다운로드](https://github.com/ellen24k/AIPoemGallery/raw/master/chatbot_mobile_gallery.webm)
+
+### Deployment Diagram - v1.0
+![Diagram](diagram_deployment-1-.png)
