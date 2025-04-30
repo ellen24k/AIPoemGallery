@@ -24,8 +24,8 @@ AI를 활용한 삼행시 생성 및 삼행시 기반 이미지 생성기
     - 관리자는 생성된 삼행시 자료들을 삭제할 수 있다.
 
 ### 데모 동영상
-![AIPoemGallery](https://raw.githubusercontent.com/ellen24k/AIPoemGallery/master/chatbot_mobile_gallery.gif)
+![AIPoemGallery](chatbot_mobile_gallery.gif)
 
 ### 데모 동영상 다운로드 (시낭송 음성을 듣기 위해 동영상으로 감상하세요)
-![AIPoemGallery](https://raw.githubusercontent.com/ellen24k/AIPoemGallery/master/chatbot_mobile_gallery.webm)
+![AIPoemGallery](chatbot_mobile_gallery.webm)
 
