@@ -13,6 +13,8 @@ AI를 활용한 삼행시 생성 및 삼행시 기반 이미지 생성기
 > v1.0 프로젝트 기간: `2024.11~2024.12`
 > \
 > v2.0 프로젝트 기간: `2025.1~2025.2`
+> \
+> [DEMO PAGE](https://gallery.ellen24k.kro.kr)
 
 ### 주요 기능
 
@@ -31,3 +33,45 @@ AI를 활용한 삼행시 생성 및 삼행시 기반 이미지 생성기
 
 ### Deployment Diagram - v1.0
 ![Diagram](diagram_deployment-1-.png)
+
+### Tech Stacks v2.0
+- - -
+###### - _Languages & Frameworks_
+<div style="display: flex; gap: 10px">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Badge"> 
+    <img src="https://img.shields.io/badge/PL%2FpgSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PL/pgSQL Badge">
+    <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit Badge">
+    <img src="https://img.shields.io/badge/Langchain-46d3e6?style=for-the-badge&logo=Langchain&logoColor=white" alt="Langchain Badge">
+</div>
+
+###### - _Database_
+<div style="display: flex; gap: 10px;">
+    <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL Badge">
+</div>
+
+###### - _Tools & Libraries_
+<div style="display: flex; gap: 10px;">
+    <img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Compose Badge">
+    <img src="https://img.shields.io/badge/APScheduler-004080?style=for-the-badge&logo=APScheduler&logoColor=white" alt="APScheduler Badge">
+</div>
+
+###### - _Cloud Service Provider_
+<div style="display: flex; gap: 10px;">
+    <img src="https://img.shields.io/badge/Oracle_Cloud-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle Badge">
+</div>
+
+##### - _CI/CD_
+<div style="display: flex; gap: 10px;">
+    <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins Badge">
+    <img src="https://img.shields.io/badge/GitHub%20Webhook-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Webhook Badge">
+</div>
+
+
+### Plan
+<details>
+  <summary>추후 업데이트 가능한 것</summary>
+  <blockquote><br>
+      사용자에게 토큰 발급해 리소스 접근 허용하기
+  </blockquote>
+</details>
+
