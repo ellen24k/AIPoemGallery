@@ -67,11 +67,3 @@ AI를 활용한 삼행시 생성 및 삼행시 기반 이미지 생성기
 </div>
 
 
-### Plan
-<details>
-  <summary>추후 업데이트 가능한 것</summary>
-  <blockquote><br>
-      사용자에게 토큰 발급해 리소스 접근 허용하기
-  </blockquote>
-</details>
-
