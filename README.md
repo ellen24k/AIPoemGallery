@@ -14,7 +14,7 @@ AI를 활용한 삼행시 생성 및 삼행시 기반 이미지 생성기
 > \
 > v2.0 프로젝트 기간: `2025.1~2025.2`
 > \
-> [DEMO PAGE](https://gallery.ellen24k.kro.kr)
+> [DEMO PAGE V2.0](https://gallery.ellen24k.kro.kr)
 
 ### 주요 기능
 
