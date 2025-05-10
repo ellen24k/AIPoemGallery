@@ -53,6 +53,7 @@ AI를 활용한 삼행시 생성 및 삼행시 기반 이미지 생성기
 <div style="display: flex; gap: 10px;">
     <img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Compose Badge">
     <img src="https://img.shields.io/badge/APScheduler-004080?style=for-the-badge&logo=APScheduler&logoColor=white" alt="APScheduler Badge">
+    <img src="https://img.shields.io/badge/MINIO-FF2C00?style=for-the-badge&logo=minio&logoColor=white" alt="MINIO Badge">
 </div>
 
 ###### - _Cloud Service Provider_
