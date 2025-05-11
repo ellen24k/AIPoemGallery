@@ -1,0 +1,49 @@
+@startuml
+title Deployment Diagram - Fast Mode
+
+actor Developer
+actor User
+
+node "Azure Services" {
+    frame OPENAI{
+        [Dalle3]
+        [ChatGPT]
+    }
+    [Azure Blob Storage]
+    [Cognitiveservices-Speech]
+}
+
+node "GitHub" {
+    [GitHub Repository]
+}
+
+node "Oracle Cloud Container" {
+    [Streamlit Web App]
+    [Jenkins]
+    [Minio Object Storage]
+    [PostreSQL]
+    [Apscheduler]
+}
+
+' 개발 및 배포 관련
+Developer --> [GitHub Repository] : CodeBase
+[Jenkins] <-up-- [GitHub Repository] : Webhook
+[Jenkins] -> [Streamlit Web App] : Build
+
+' 사용자 동작
+User ----> [Streamlit Web App]
+
+' 주요 기능 흐름
+[Streamlit Web App] -> [Dalle3] : Image\nGeneration
+[Streamlit Web App] -> [ChatGPT] : "   Chatbot"
+[Streamlit Web App] ---> [Cognitiveservices-Speech] : Text-to-Speech Wav
+[Streamlit Web App] --> [Minio Object Storage]
+[Streamlit Web App] -left-> [PostreSQL] : "       Database     "
+
+' 이미지 저장 및 URL 업데이트 흐름
+[Dalle3] -left-> [Azure Blob Storage] : "Image Storage  "
+[Apscheduler] -> [Azure Blob Storage] : " Fetch unsaved images"
+[Apscheduler] -left-> [Minio Object Storage] : Upload images
+[Apscheduler] -up-> [PostreSQL] : every 1H\nUpdate Image URLs
+
+@enduml
