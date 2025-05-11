@@ -26,13 +26,16 @@ AI를 활용한 삼행시 생성 및 삼행시 기반 이미지 생성기
     - 관리자는 생성된 삼행시 자료들을 삭제할 수 있다.
 
 ### 데모 동영상 (V1.0)
-![AIPoemGallery](chatbot_mobile_gallery.gif)
+![AIPoemGallery](resources/chatbot_mobile_gallery.gif)
 
 ### 데모 동영상 다운로드 (V1.0) (시낭송 음성을 듣기 위해 동영상으로 감상하세요)
 [데모 영상 다운로드](https://github.com/ellen24k/AIPoemGallery/raw/master/chatbot_mobile_gallery.webm)
 
 ### Deployment Diagram - v1.0
-![Diagram](diagram_deployment-1-.png)
+![Diagram](resources/diagram_deployment-1-.png)
+
+### Deployment Diagram - v1.0
+![Diagram](resources/diagram_deployment_new.png)
 
 ### Tech Stacks v2.0
 - - -
