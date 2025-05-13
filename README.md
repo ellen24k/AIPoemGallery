@@ -1,3 +1,5 @@
+![AIPOEM](resources/aipoem.png)
+
 # AI 삼행시 갤러리 v2.0 2025
 ### 프로젝트 소개
 
